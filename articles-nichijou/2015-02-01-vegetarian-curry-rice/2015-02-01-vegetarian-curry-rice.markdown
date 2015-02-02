@@ -8,7 +8,7 @@
 
 總體評價就是 CP 值很高，價格在台北來說平易近人，量又不會太少、又好吃。
 
-<center><img src="https://farm8.staticflickr.com/7449/16428221835_b3c2637211_o.jpg"><br><small>麻辣臭臭烏龍麵 - NT$ 70<br>...</small></center>
+<center><img src="https://farm8.staticflickr.com/7311/16242563527_f96fb971dd_o.jpg"><br><small>麻辣臭臭烏龍麵 - NT$ 70<br>...</small></center>
 
 Tamako 點的是「麻辣臭臭烏龍麵」，上菜之後滿大碗的、臭豆腐還是兩大塊！
 
