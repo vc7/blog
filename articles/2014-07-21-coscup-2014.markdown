@@ -1,0 +1,67 @@
+---
+layout: post
+title: "COSCUP 2014"
+date: 2014-07-21 09:43:15 +0800
+comments: true
+categories: ["Conference", "COSCUP"]
+keywords: conference, coscup, 
+description: "這次首次參加 COSCUP 解開許多成就（笑），看了也學了很多東西，這篇文章是與會 COSCUP 2014 的心得。"
+references: 
+hero: "https://farm3.staticflickr.com/2896/14725130653_0d37f7bfa0_o.png"
+---
+
+{% img center https://farm4.staticflickr.com/3838/14724990343_383bf82776_o.jpg %}
+
+這次首次參加 COSCUP 解開許多成就（笑），看了也學了很多東西，這篇文章是與會 COSCUP 2014 的心得。
+
+<!-- more -->
+
+## COSCUP
+
+COSCUP 中文為「開源人年會」，全名是 Conference for Open Source Coders, Users and Promoters ，自從 2006 由 「國際開放源碼研討會」社群議程軌分離出來之後，定位為社群大拜拜的研討會。近年來人氣高升，不斷挑戰票券完售的時間及售票亭的壓力，在 2014 年更首次延伸到中研院的活動中心。
+
+## COSCUP 2014
+
+### 主題
+
+-> <del style="color:skyblue;">這次的主題是哆啦 A 夢。</del> <-
+
+這次的主題是 Maker ，而 Keynote 也是以 Maker 的影片開場。在議程的安排上也有許多 Arduino 、Raspberry PI 、3D Printer 的分享，也把硬體的開源拉進社群裡。
+
+軟體方面的議程則是非常多元，從底層到前端各種技術幾乎都有，非常的豐富。只不過有些自己有興趣的議題重疊了，變得無法影分身去聽，有點可惜。
+
+
+### 報到
+
+今年報到是用 NFC 名牌，報到時則是用過閘門的方式，雖然偶有卡片高低造成感應不良的問題，但是還是讓我覺得還滿新奇的，據說也有讓報到速度增加許多。
+
+這些 NFC 名牌也不只有報到的功能，還可以到各個參展攤位用 NFC 打卡和投履歷，除了東看西看還增加了這個遊戲及徵才的元素。
+
+### 食物
+
+這就不用說了，不論從早餐、午餐到下午茶點心，真的太豐盛了。
+
+<center> {% img https://farm4.staticflickr.com/3925/14704838222_9600e54545_m.jpg 240 %} {% img https://farm6.staticflickr.com/5489/14682124016_dff5ff539b_m.jpg 240 %} {% img https://farm3.staticflickr.com/2913/14705130195_e3502e7af5_m.jpg 240 %}</center>
+
+另外覺得意外的一點是，主辦方除了在午餐讓素食者可以選擇素食便當之外，在早餐和下午茶的點心都有素食餐點，真的考慮的很周到。只不過夾子葷素混用的情形應該會很難避免 ...
+
+廠商攤位的部分，在主要的人文館有圓石、次要的活動中心有琅茶。
+
+在 BoF 則是照樣有 Pizza 可以吃，當工程師真好啊 ～～ （笑
+
+## 議程
+
+議程的部分，我則是以跟自己有比較相關的技術來聽，所以大部分都是軟體開發類或是社群議題的部分。大陸的講者的議程也幾乎都有聽到，也發現他們想法、作法和我們不同的地方，有些也值得我們去學習。
+
+詳細有聽過的議程將會盡量另外開文章撰寫出來，有些內容寫在這邊會太長了（倒
+
+## 閃電秀
+
+這次的 LT 是參加過的 conferences 最熱血的一次，高潮迭起、又很有內容，也看到其他人做的很多有趣的東西。甚至還有桌機哥的 Q&A 時間，真的太有梗了 XDD
+
+## 感謝
+
+{% img center https://farm6.staticflickr.com/5591/14518676707_25f5eb1c65_o.jpg %}
+
+最後還是要感謝 COSCUP 所有的工作人員以及贊助廠商，才能夠讓我們參加到這次這麼讚又豐富的研討會！！ 明年一定會繼續參加！
+

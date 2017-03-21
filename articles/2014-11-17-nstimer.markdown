@@ -1,0 +1,42 @@
+---
+layout: post
+title: "NSTimer"
+date: 2014-11-17 23:04:55 +0800
+comments: true
+categories: ['iOS', 'Foundation'] 
+keywords: iOS, NSTimer, countdown
+description: 'NSTimer 是 Foundation framework 的成員，可以用來處理定期週期性的行為或是拿來做倒數計時器。'
+references: [{ title: 'NSTimer - Apple Documentation', link: 'https://developer.apple.com/Library/ios/documentation/Cocoa/Reference/Foundation/Classes/NSTimer_Class/index.html#//apple_ref/occ/cl/NSTimer'}]
+hero: 'https://farm6.staticflickr.com/5609/15810519751_6f8daaaf34_o.png'
+---
+
+<a href="https://developer.apple.com/Library/ios/documentation/Cocoa/Reference/Foundation/Classes/NSTimer_Class/index.html#//apple_ref/occ/cl/NSTimer" target="_blank" title="Apple - NSTimer"><code style="color:Crimson">NSTimer</code></a> 是 `Foundation` framework 的成員，可以用來處理定期週期性的行為或是拿來做倒數計時器。這裡做個簡單的筆記如何使用它。
+
+<!-- more -->
+
+## Initailize
+
+最簡單的用法，當初始化一個 `NSTimer` 的時候就可以設定他是否會重複 (`reapeats`) 、幾秒鐘重複一次 (`timeInterval`)、重複的時候會做什麼事情 (`SEL`) 等等。
+
+在一個 class 中，先建立一個 `NSTimer` 的 property `myTimer` ，接著用 `+ scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:` 這個 class method 來生成一個 timer ，實體化後就會直接開始運作了。
+
+``` objc
+self.myTimer = [NSTimer scheduledTimerWithTimeInterval:1 // 秒 
+                                                target:self 
+                                              selector:@selector(update:) 
+                                              userInfo:nil 
+                                               repeats:YES];
+```
+
+別忘記還要在 class 內裡面加個 method `- (void)update:(id)sender` 來放每個重複期間要做的事情。
+
+## Stop and Release
+
+當需要停止 timer 的時候，直接呼叫 `invalidate` 就可以了，停止之後再設定為 `nil` 就可以釋放它。
+
+``` objc
+[self.myTimer invalidate];
+self.myTimer = nil;
+```
+
+當這個 timer 具有重複性質時，就可以停止這個 timer 繼續執行；如果這個 timer 只有一次性且尚未觸發，呼叫 `invalidate` 就可以直接提早阻止這個 timer 的動作被觸發。

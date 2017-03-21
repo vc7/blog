@@ -1,0 +1,51 @@
+---
+layout: post
+title: "敏捷開發流程中需不需要 QA ？"
+date: 2014-07-27 22:13:35 +0800
+comments: true
+categories: ["Agile", "Scrum", "Software Engineer"]
+keywords: scrum, agile, qa, 自動化測試, monkey test, CI
+description: "這兩天在上 Teddy 的 Scrum 敏捷方法實作班，其中提到了 QA 的這個角色該不該存在的議題。還滿新穎的觀點，也看國內的作法全然不同，筆記下來。"
+references:
+hero: "https://farm6.staticflickr.com/5589/14754558011_1a5b0a6108_o.png"
+---
+
+這兩天在上 Teddy 的 Scrum 敏捷方法實作班，其中提到了 QA （ Quality Assurance ）的這個角色該不該存在的議題。還滿新穎的觀點，也看國內的作法全然不同，筆記下來。
+
+<!-- more -->
+
+## QA
+
+QA 團隊在大多數企業中，通常是一個獨立的部門，獨立於開發者團隊之外，負責像 monkey test 這一類的手動測試。
+
+這些人通常和公司內的 RD 團隊處於對立的角色，負責找 RD 碴。
+
+### 缺點
+
+但是當 QA 人越來越多， RD 就會越懶的去驗證自己寫的結果是正確或錯誤，反正有一群猴子幫他們測試。等 QA 發現錯誤之後再來改。
+
+但是這樣一來一回非常浪費工時，而且 QA 又是 project team 以外的角色，有時候也很難保證手動測試的品質。
+
+## 寫測試
+
+因此工程師更應該要寫單元測試來驗證自己程式的邏輯，並將 task 的 DoD （ Definition of Done ，完成的定義）， 定為測試結果是綠燈才能算是完成。 而某種程度來說，對自己的 code 的 DoD 定義越嚴謹，也是對自己的產出越負責。
+
+接著再做持續性整合及自動化測試，除了可以從團隊內部加上測試，控制正確性及品質，因為 QA 並不能改善品質。
+
+這麼做也可以達到 scrum process framework 中「持續產出」的精神，隨時都可以交付可執行的產品。
+
+## 就不用 QA 了？
+
+Teddy 的講法是：
+
+> 理想狀態是沒有 QA team 的
+
+以和開發有關係的人都要在團隊裡面這個為出發的話，做人工測試的人其實也是要拉近團隊裡面，達到所謂的 cross-functional team 。 在 sprint iterating 的過程中，不斷參與測試過程，若有問題才可以及時修正，不用等到有 build 出來，等 QA 測到 bug 才回報。
+
+雖說當把 build 丟到 scope 外去測試，以第三方角色來擔當測試是正確的，但是以 value driven 考慮，來往之間會消耗不必要的人力成本。
+
+## SET
+
+SET 是 Software Engineer in Test 的縮寫，在國外比較大的公司內部的團隊就有這個角色，專門在 project team 中協助工程師撰寫及執行自動化測試，
+
+因此在組織中加入 SET 還是比較適當的。而工程師自己也要定義嚴謹的 DoD 開始，就可以從組織內部內建 quality 了。

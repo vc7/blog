@@ -1,0 +1,36 @@
+---
+layout: post
+title: "COLLADA 格式"
+date: 2014-07-18 23:13:20 +0800
+comments: true
+categories: ["3D"]
+keywords: 3d, dae, collada, animation, scene kit, maya
+description: "這個格式是在看 Scene Kit 的時候看到的，對要做 3D 相關互動都很重要，因此記錄一下。"
+references: [{title: "COLLADA - Wikipedia", link: "http://en.wikipedia.org/wiki/COLLADA"}, {title: "ISO/PAS 17506:2012- ISO", link: "http://www.iso.org/iso/catalogue_detail.htm?csnumber=59902"}, {title: "COLLADA spec 1.5 - Khronos Group", link: "http://www.khronos.org/files/collada_spec_1_5.pdf"}]
+hero: "https://farm4.staticflickr.com/3870/14497915338_abb73fcfd5_o.png"
+---
+
+這個格式是在看 WWDC 中對 Scene Kit 的介紹的時候看到的，對要做 3D 相關互動都很重要，因此記錄一下。
+
+COLLADA 是個給 3D 互動程式使用的格式，全名是： COLLAborative Design Activity ；檔案的副檔名則是 DAE ，是 Digital Asset Exchange 的縮寫。
+
+<!-- more -->
+
+COLLADA schema 目前由 Khronos Group 所維護，規格並具有標準：[ISO/PAS 17506](http://www.iso.org/iso/catalogue_detail.htm?csnumber=59902) 。這個檔案的內容則是用 XML 檔案所構成。
+
+## COLLADA 可以儲存的訊息
+
+- **Core Elements** - 儲存座標（點、線、面）、顏色、相機、動畫、 node 、 skeleton 等核心資訊
+- **Physics** - 物理效果資訊
+- **FX** - shaders, rendering, texturing ，含景深及材質效果等。
+- **Boundary Representation, B-REP** - 儲存 B-REP 繪圖法的各種資訊： surfaces, curves and points 。
+- **Kinematics** - 運動資訊，如生物的手部動作。在 Maya 裡面則有 FK 和 IK 兩種。
+
+## 結論
+
+
+從美術端，這個格式可以由各種主流的 3D application 匯出： Maya 、 3ds Max 、 Modo 等。遊戲引擎端也有很多主流的引擎支援，如： Unity 、 Unreal 這兩個都有直接支援。在各個程式語言也有 libraries 可以用： Scene Kit （ Objective-C, OSX and iOS ）、 pycollada （ Python ）、GLGE （ Javascript for WebGL）等等。
+
+這個標準出來之後，讓遊戲和美術端要克服的工程難度越來越降低：美術團隊可以做自己想要的貼圖、動作、打光，藉由匯出 dae 檔給工程師們，在遊戲引擎裡也可以根據 dae 的內容去構築場景，可以加快開發上的速度。
+
+自從 iOS 8 可以用 Scene Kit 之後，他也可以塞 dae ，所以未來要匯入模型就更容易了！
